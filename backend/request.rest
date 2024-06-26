@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJWaWN0b3IgQ2hhbmRyYSIsImVtYWlsIjoiZW1haWxAZ21haWwuY29tIiwiaWF0IjoxNzE5MzA0NjE1LCJleHAiOjE3MTkzMDQ2MzV9.HwLttJa-PMmaZaE5a1mjUPQIIhq3hEPvG69IpOzHzrE
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Victor Chandra",
+    "email": "email@gmail.com",
+    "password": "123",
+    "confPassword": "123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "123"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
